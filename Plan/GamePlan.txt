@@ -1,0 +1,21 @@
+# SpiralOS
+
+## Problem Statement
+
+## Intended Users
+
+## Core Purpose
+
+## What SpiralOS Is Not
+
+## Local-First Promise
+
+## Data and Privacy Rules
+
+## Permission Rules
+
+## First-Version Scope
+
+## Long-Term Vision
+
+## Definition of Success
