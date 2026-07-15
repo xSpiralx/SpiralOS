@@ -27,10 +27,12 @@ if user_request  == "":
 elif user_request == "hello":
     print(f"Hello, {user_name}")
 elif user_request == "help":
-    print("Current Commands: hello, help, about and exit.\n")
+    print("Current Commands: hello, about, help, about and exit.\n")
+elif user_request == "about":
+    print("SpiralOS is a local-first assistant project")
 elif user_request == "exit":
     running = False
     print("System is shutting down.")
 else: 
-    user_request != ("help", "exit", "")
+    user_request != ("help", "exit", "", "about")
     print("Invalid Command.")
