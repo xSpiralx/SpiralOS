@@ -28,7 +28,6 @@ elif user_request == "hello":
     print(f"Hello, {user_name}")
 elif user_request == "help":
     print("Current Commands: hello, help, about and exit.\n")
-    print(f"Let's get started on {user_request}!")
 elif user_request == "exit":
     running = False
     print("System is shutting down.")
