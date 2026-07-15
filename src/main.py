@@ -6,22 +6,25 @@ SpiralOS Starting...
 SpiralOS v0.01
 Local Mode Enabled
       """
+      
+print(boot_message)
 running = True
-if running == True:
-    print(boot_message)
+if running:
+    print("...running...")
 
 # User info/request
-user_name = input("""What is your name?
-    Name: """)
+user_name = input(f"""What is your name?
+    Name: """).strip
 if user_name == "":
     print("A name is required.")
-    
-print(f"""
+    running == False
+else:
+    print(f"""
 Welcome, {user_name}!
 Type "help" to see available commands.
 """)
     
-user_request = input("What can I help you with today?: ")
+user_request = input("What can I help you with today?: ").strip().lower()
 if user_request  == "":
     print("A request is required.")
 elif user_request == "hello":
