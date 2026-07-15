@@ -1,4 +1,4 @@
-
+noinput_error = "You didn't type anything in the input."
 
 #Boot Message
 print("""
@@ -8,21 +8,19 @@ Local Mode Enabled
       """)
 
 
-user_name = input(f"""What is your name?
+user_name = input("""What is your name?
     Name: """)
 if user_name == "":
-    print("You didn't type anything.")
+    print(noinput_error)
 
-user_request = input(f"What can I help you with today?: ")
+user_request = input("What can I help you with today?: ")
 
+#Edge case for blank 
 if user_request  == "":
-    print("You didn't type anything.")
+    print(noinput_error)
 
 
 
-#Edge case for no input
-if user_request or user_name == "":
-    print("You didn't type anything.")
 
 
 
